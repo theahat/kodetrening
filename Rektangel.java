@@ -2,15 +2,25 @@ public class Rektangel {
 
     private double lengde;
     private double bredde;
-    public Rektangel (double l, double b) {   // Konstruktør
-        lengde = l;
-        bredde = b;
+    public Rektangel (double lengde, double bredde) {   // Konstruktør
+        this.lengde = lengde;
+        this.bredde = bredde;
     }
   
-    public void oekLengde (int okning) {    // Oek lengden som angitt
+    public void oekLengde (double okning) {    // Oek lengden som angitt
+        lengde = lengde+okning;
     }
   
-    public void oekBredde (int okning) {    // Oek bredden som angitt
+    public void oekBredde (double okning) {    // Oek bredden som angitt
+        bredde+=okning;
+    }
+
+    public void minkeLengde (double minking) {    // Oek lengden som angitt
+        lengde = lengde-minking;
+    }
+  
+    public void minkeBredde (double minking) {    // Oek bredden som angitt
+        bredde-=minking;
     }
   
     public double areal () {     // Beregn mitt areal
@@ -27,6 +37,10 @@ public class Rektangel {
         System.out.println(rektangel2.areal());
         rektangel1.oekLengde(4);
         rektangel2.oekBredde(2);
+        System.out.println(rektangel1.omkrets());
+        System.out.println(rektangel2.omkrets());
+        rektangel1.minkeBredde(6);
+        rektangel2.minkeLengde(7);
         System.out.println(rektangel1.omkrets());
         System.out.println(rektangel2.omkrets());
     }
