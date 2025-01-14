@@ -16,7 +16,6 @@ class MindreStorre {
                 }
             }
         } catch (NumberFormatException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
