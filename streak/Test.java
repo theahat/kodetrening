@@ -7,6 +7,7 @@ public class Test {
         LocalDate dato2 = LocalDate.of(2025, Month.JANUARY, 16);
         if (dato1.plusDays(1).isEqual(dato2)){
             System.out.println("Suksess!");
+            System.out.println(":)");
         }
     }
 } 
