@@ -1,4 +1,5 @@
 /*
+arraylist commands
 names.add(value)
 names.add(index, value)
 names.remove() - removes element 0
