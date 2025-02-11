@@ -10,7 +10,7 @@ names.get(index)
 import java.util.ArrayList;
 import java.util.Scanner; 
 
-public class Arrays {
+public class ArrayListTests {
 
     public static void arrays(){
         ArrayList<String> friends = new ArrayList<String>();
@@ -52,10 +52,19 @@ public class Arrays {
             }
             System.out.println();
         }
-
     }
+
+    public static ArrayList<Integer> reverse(ArrayList<Integer> list){
+        ArrayList<Integer> newList = new ArrayList<Integer>();
+        for (int i = (list.size()-1); i>=0; i--){
+            newList.add(list.get(i));
+        }
+        return newList;
+    } 
+
     public static void main(String[] args) {
         //arrays();
+        /*
         ArrayList<Double> values = new ArrayList<Double>();
         System.out.print("Please enter values: ");
         Scanner tastatur = new Scanner(System.in);
@@ -64,5 +73,14 @@ public class Arrays {
         }
         ArrayList<Double> newValues = removeDupes(values);
         largestInArray(newValues);
+        */
+        ArrayList<Integer> primes = new ArrayList<Integer>();
+        primes.add(2);
+        primes.add(3);
+        primes.add(5);
+        primes.add(7);
+        primes.add(11);
+        System.out.println(reverse(primes));
     }
+
 }
